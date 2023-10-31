@@ -448,6 +448,11 @@ memcached:
     # limits:
     #   cpu: 100m
     #   memory: 128Mi
+  auth:
+    enable: true
+    # Credentials
+    username: zammad
+    password: zammad
 
 # settings for the postgres subchart
 postgresql:
