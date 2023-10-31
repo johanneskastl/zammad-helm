@@ -453,6 +453,11 @@ memcached:
     # Credentials
     username: zammad
     password: zammad
+    # To use an existing Kubernetes secret containing the credentials,
+    # comment out the two lines above (username and password),
+    # remove the comments on the line below and adjust it accordingly
+    #
+    # existingSecret: memcached-pass
 
 # settings for the postgres subchart
 postgresql:
