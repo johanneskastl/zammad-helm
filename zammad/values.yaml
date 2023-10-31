@@ -43,6 +43,12 @@ secrets:
     useExisting: false
     secretKey: redis-password
     secretName: redis-pass
+  memcached:
+    useExisting: false
+    # this cannot be changed, the upstream chart requires the key to be named like that.
+    # https://github.com/bitnami/charts/blob/main/bitnami/memcached/README.md?plain=1#L92
+    secretKey: memcached-password
+    secretName: memcached-pass
 
 securityContext:
   fsGroup: 1000
